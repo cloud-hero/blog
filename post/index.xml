@@ -1,17 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Blog.CloudHero.io on Blog.CloudHero.io </title>
-      <generator uri="https://gohugo.io">Hugo</generator>
-    <link>http://blog.cloudhero.io/</link>
+    <title>Posts on Blog.CloudHero.io</title>
+    <link>http://blog.cloudhero.io/post/</link>
+    <description>Recent content in Posts on Blog.CloudHero.io</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 05 Apr 2019 15:47:08 +0200</lastBuildDate>
     
+	<atom:link href="http://blog.cloudhero.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    <updated>Fri, 05 Apr 2019 15:47:08 &#43;0200</updated>
     
     <item>
       <title>Best Practice Approach to Application Logging in Kubernetes</title>
       <link>http://blog.cloudhero.io/post/best-practice-approach-to-application-logging-in-kubernetes/</link>
-      <pubDate>Fri, 05 Apr 2019 15:47:08 &#43;0200</pubDate>
+      <pubDate>Fri, 05 Apr 2019 15:47:08 +0200</pubDate>
       
       <guid>http://blog.cloudhero.io/post/best-practice-approach-to-application-logging-in-kubernetes/</guid>
       <description>Hey guys,
@@ -22,7 +25,7 @@ Today I am going to talk about the EFK stack, what it is, and how you can config
     <item>
       <title>Running GitLab-Runners on Kubernetes</title>
       <link>http://blog.cloudhero.io/post/running-gitlab-runners-on-kubernetes/</link>
-      <pubDate>Mon, 14 May 2018 15:47:08 &#43;0200</pubDate>
+      <pubDate>Mon, 14 May 2018 15:47:08 +0200</pubDate>
       
       <guid>http://blog.cloudhero.io/post/running-gitlab-runners-on-kubernetes/</guid>
       <description>In the DevOps era where very much emphasis is placed on automation, having reliable, predictable and fast pipelines is a must. Fortunately, there are many options that you to try, like Jenkins, Buildbot, Drone, Concourse and so on. If you are trying to run jobs on k8s there is also the new Jenkins X available which brings major changes to Jenkins to run jobs in the cluster, but if you host your code on GitLab, you should use their CI/CD tool because it can save you a lot of time and money when done right.</description>
@@ -31,7 +34,7 @@ Today I am going to talk about the EFK stack, what it is, and how you can config
     <item>
       <title>Top Three Benefits of Using Docker</title>
       <link>http://blog.cloudhero.io/post/top-three-benefits-using-docker/</link>
-      <pubDate>Fri, 10 Mar 2017 15:47:08 EET</pubDate>
+      <pubDate>Fri, 10 Mar 2017 15:47:08 +0200</pubDate>
       
       <guid>http://blog.cloudhero.io/post/top-three-benefits-using-docker/</guid>
       <description>Running applications in containers instead of virtual machines is fast gaining momentum in the IT world. The technology is considered to be one of the fastest growing in recent history thanks to it being adopted by key names in the industry alongside many software vendors. At its heart of this ecosystem lies Docker, a platform that allows users to pack, distribute and manage Linux applications within containers. The company and its software have grown immensely since the moment they penetrated the market, now seeking to invest in furthering the usability of the container technology.</description>
@@ -40,49 +43,11 @@ Today I am going to talk about the EFK stack, what it is, and how you can config
     <item>
       <title>Why is Docker’s container approach so important?</title>
       <link>http://blog.cloudhero.io/post/why-is-dockers-container-approach-so-important/</link>
-      <pubDate>Fri, 10 Mar 2017 13:47:08 EET</pubDate>
+      <pubDate>Fri, 10 Mar 2017 13:47:08 +0200</pubDate>
       
       <guid>http://blog.cloudhero.io/post/why-is-dockers-container-approach-so-important/</guid>
       <description>Docker is one of the fastest growing technologies of recent history, gaining an unparalleled momentum in the IT world and converting many practitioners to its side. It’s container technology allows users to have ever more running apps on the same servers, while at the same time increasing the ease with which they can package and ship programs. However, Docker is not the only container software on the market. There are countless other similar technologies.</description>
     </item>
     
-    <item>
-      <title>Contact</title>
-      <link>http://blog.cloudhero.io/contact/</link>
-      <pubDate>Sun, 09 Nov 2014 13:49:44 &#43;0400</pubDate>
-      
-      <guid>http://blog.cloudhero.io/contact/</guid>
-      <description>   </description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>http://blog.cloudhero.io/search/</link>
-      <pubDate>Sun, 09 Nov 2014 13:49:44 &#43;0400</pubDate>
-      
-      <guid>http://blog.cloudhero.io/search/</guid>
-      <description>      $(document).ready(function() { $(&#39;#tipue_search_input&#39;).tipuesearch({ &#39;mode&#39; : &#39;json&#39;, &#39;show&#39;: 10, &#39;newWindow&#39;: true, &#39;wholeWords&#39;: false }); });     </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://blog.cloudhero.io/about/</link>
-      <pubDate>Sat, 08 Nov 2014 16:42:18 &#43;0400</pubDate>
-      
-      <guid>http://blog.cloudhero.io/about/</guid>
-      <description>Few words about project.</description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>http://blog.cloudhero.io/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-      
-      <guid>http://blog.cloudhero.io/faq/</guid>
-      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
-    </item>
-    
   </channel>
 </rss>
-

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitLab-Runners, Kubernetes, K8s on Blog.CloudHero.io</title>
+    <link>http://blog.cloudhero.io/tags/gitlab-runners-kubernetes-k8s/</link>
+    <description>Recent content in GitLab-Runners, Kubernetes, K8s on Blog.CloudHero.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 May 2018 15:47:08 +0200</lastBuildDate>
+    
+	<atom:link href="http://blog.cloudhero.io/tags/gitlab-runners-kubernetes-k8s/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running GitLab-Runners on Kubernetes</title>
+      <link>http://blog.cloudhero.io/post/running-gitlab-runners-on-kubernetes/</link>
+      <pubDate>Mon, 14 May 2018 15:47:08 +0200</pubDate>
+      
+      <guid>http://blog.cloudhero.io/post/running-gitlab-runners-on-kubernetes/</guid>
+      <description>In the DevOps era where very much emphasis is placed on automation, having reliable, predictable and fast pipelines is a must. Fortunately, there are many options that you to try, like Jenkins, Buildbot, Drone, Concourse and so on. If you are trying to run jobs on k8s there is also the new Jenkins X available which brings major changes to Jenkins to run jobs in the cluster, but if you host your code on GitLab, you should use their CI/CD tool because it can save you a lot of time and money when done right.</description>
+    </item>
+    
+  </channel>
+</rss>

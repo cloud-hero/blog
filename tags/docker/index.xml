@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Blog.CloudHero.io</title>
+    <link>http://blog.cloudhero.io/tags/docker/</link>
+    <description>Recent content in docker on Blog.CloudHero.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 15:47:08 +0200</lastBuildDate>
+    
+	<atom:link href="http://blog.cloudhero.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Top Three Benefits of Using Docker</title>
+      <link>http://blog.cloudhero.io/post/top-three-benefits-using-docker/</link>
+      <pubDate>Fri, 10 Mar 2017 15:47:08 +0200</pubDate>
+      
+      <guid>http://blog.cloudhero.io/post/top-three-benefits-using-docker/</guid>
+      <description>Running applications in containers instead of virtual machines is fast gaining momentum in the IT world. The technology is considered to be one of the fastest growing in recent history thanks to it being adopted by key names in the industry alongside many software vendors. At its heart of this ecosystem lies Docker, a platform that allows users to pack, distribute and manage Linux applications within containers. The company and its software have grown immensely since the moment they penetrated the market, now seeking to invest in furthering the usability of the container technology.</description>
+    </item>
+    
+    <item>
+      <title>Why is Docker’s container approach so important?</title>
+      <link>http://blog.cloudhero.io/post/why-is-dockers-container-approach-so-important/</link>
+      <pubDate>Fri, 10 Mar 2017 13:47:08 +0200</pubDate>
+      
+      <guid>http://blog.cloudhero.io/post/why-is-dockers-container-approach-so-important/</guid>
+      <description>Docker is one of the fastest growing technologies of recent history, gaining an unparalleled momentum in the IT world and converting many practitioners to its side. It’s container technology allows users to have ever more running apps on the same servers, while at the same time increasing the ease with which they can package and ship programs. However, Docker is not the only container software on the market. There are countless other similar technologies.</description>
+    </item>
+    
+  </channel>
+</rss>

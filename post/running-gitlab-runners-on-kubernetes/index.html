@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Running GitLab-Runners on Kubernetes - Blog.CloudHero.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="http://blog.cloudhero.io/post/running-gitlab-runners-on-kubernetes/">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  <link rel="stylesheet" type="text/css" href="http://blog.cloudhero.io/css/combined-min.css">
+  <link rel="stylesheet" type="text/css" href="http://blog.cloudhero.io/tipuesearch/tipuesearch.css">
+
+</head>
+<body class="">
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+    <div class="mt2 wrap">
+      <div class="measure">
+        <a href="http://blog.cloudhero.io" class="site-title">
+            <img src="../../images/logo.png">
+        </a>
+        <nav class="site-nav right">
+         <a href="../../about/">About Us</a>
+<a href="../../contents">Blog</a>
+<a href="../../contact/">Careers</a>
+        </nav>      
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </header>
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">Running GitLab-Runners on Kubernetes</h1>
+        <span class="post-meta">May 14, 2018 by Andrei Petrescu</span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <p>In the DevOps era where very much emphasis is placed on automation, having reliable, predictable and fast pipelines is a must. Fortunately, there are many options that you to try, like Jenkins, Buildbot, Drone, Concourse and so on. If you are trying to run jobs on k8s there is also the new Jenkins X available which brings major changes to Jenkins to run jobs in the cluster, but if you host your code on GitLab, you should use their CI/CD tool because it can save you a lot of time and money when done right.</p>
+
+<p>The first step is to configure your projects to use the CI/CD pipeline offered by GitLab and after that you can start deploying. At first, you can use GitLab&rsquo;s free shared runners, but if you try to deploy your code at a bad time when the servers are overcrowded, you are in for a world of hurt. To makes things easier, GitLab enables you to run you jobs in your own cluster, and it is pretty simple to do so.</p>
+
+<p>The first thing you need to do is go to your project, then to Settings &ndash;&gt; CI/CD &ndash;&gt; Runners settings and fetch the URL and the token to use when creating your runner. Keep in mind, that this is not the token that you will place in your configuration file, it is just a token that registers your runner, which in turn generates another token that is used to identify it.</p>
+
+<p>The next step is running a gitlab-runner container locally to conigure you runner.</p>
+
+<p>Once you are in the container run the following command:</p>
+
+<p>It will open a prompt where it will ask for the URL and token that you copied earlier. It will ask you other things also, like adding tags to this runner, if you will allow untagged jobs to run on it, if you will lock this runner to this project and so on. The answers are yours to choose.</p>
+
+<p>After finishing the registration, the command will generate a configuration file located in</p>
+
+<p>This is the file that you will use when creating your runner pod on Kubernetes.</p>
+
+<p>Store this configuration file in a ConfigMap like this:</p>
+
+<p>Concurrent specifies the number of parallel jobs that the runner will run, and the privileged field should be set to true if you plan on using the docker:dind image as a service. If you do so, do not forget to set the DOCKER_HOST environment variable in your build container to tcp://localhost:2375 in your Settings &ndash;&gt; CI/CD from your root directory where you can see all the projects.</p>
+
+<p>After this you can pack the gitlab-runner into a deployment and mount the configmap like this:</p>
+
+<p>Hope this helped you and happy deploying!</p>
+
+<p>Andrei Petrescu,</p>
+
+<p>DevOps Engineer at Cloudhero</p>
+
+      </article>
+
+      <p class="post-meta">Tags:&nbsp;
+        
+            
+            <a href="http://blog.cloudhero.io/tags/GitLab-Runners,%20Kubernetes,%20K8s">GitLab-Runners, Kubernetes, K8s</a>
+        
+      </p>
+
+      
+
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="p2 wrap">
+      <div class="measure mt1 center">
+    <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="../../index.xml"></a>
+
+<a class="fa fa-twitter twitter" href="https://twitter.com/username"></a>
+
+</nav>
+
+        <small>
+          Copyright &#169; 2019<br>
+          Powered by CloudHero</a>
+        </small>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="../../js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  
+  
+
+
+</body>
+</html>

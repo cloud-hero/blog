@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Blog.CloudHero.io on Blog.CloudHero.io </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://blog.cloudhero.io/ru/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Sun, 09 Nov 2014 13:49:44 &#43;0400</updated>
+    
+    <item>
+      <title>Контакты</title>
+      <link>http://blog.cloudhero.io/ru/contact/</link>
+      <pubDate>Sun, 09 Nov 2014 13:49:44 &#43;0400</pubDate>
+      
+      <guid>http://blog.cloudhero.io/ru/contact/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>О нас</title>
+      <link>http://blog.cloudhero.io/ru/about/</link>
+      <pubDate>Sat, 08 Nov 2014 16:42:18 &#43;0400</pubDate>
+      
+      <guid>http://blog.cloudhero.io/ru/about/</guid>
+      <description>Пару слов о проекте.</description>
+    </item>
+    
+  </channel>
+</rss>
+

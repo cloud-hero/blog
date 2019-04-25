@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application, Logging, Kubernetes on Blog.CloudHero.io</title>
+    <link>http://blog.cloudhero.io/tags/application-logging-kubernetes/</link>
+    <description>Recent content in Application, Logging, Kubernetes on Blog.CloudHero.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Apr 2019 15:47:08 +0200</lastBuildDate>
+    
+	<atom:link href="http://blog.cloudhero.io/tags/application-logging-kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best Practice Approach to Application Logging in Kubernetes</title>
+      <link>http://blog.cloudhero.io/post/best-practice-approach-to-application-logging-in-kubernetes/</link>
+      <pubDate>Fri, 05 Apr 2019 15:47:08 +0200</pubDate>
+      
+      <guid>http://blog.cloudhero.io/post/best-practice-approach-to-application-logging-in-kubernetes/</guid>
+      <description>Hey guys,
+Today I am going to talk about the EFK stack, what it is, and how you can configure it for maximum visibility in your logs. The 3 components of the EFK stack are as follows: - Elasticsearch - Fluentbit/Fluentd - Kibana
+ In this blog post I will focus on Fluentbit, as it is the lightweight version of Fluentd and, in my opinion, is more suited to Kubernetes. We will also focus on how I reached this the final solution and the hurdles I had to overcome, and also how to handle application logs without actually installing and 3rd party clients like https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

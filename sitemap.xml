@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>http://blog.cloudhero.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2019-04-05T15:47:08+02:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>http://blog.cloudhero.io/ru/sitemap.xml</loc>
+		
+	   	<lastmod>2014-11-09T13:49:44+04:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>
